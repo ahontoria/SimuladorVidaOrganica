@@ -100,7 +100,7 @@ Los genes pueden mutar con una pequeña probabilidad, introduciendo variaciones 
 
 1. Clona el repositorio.
 ```bash
-   git clone [URL del repositorio]
+   git clone https://github.com/ahontoria/SimuladorVidaOrganica
 ``` 
 2. Abre el archivo `index.html` en tu navegador web.
 3. Utiliza los controles y botones disponibles para interactuar con la simulación.
