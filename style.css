@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#controlPanel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#legendToggle, #addResourcesButton {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#speedRange {
+    width: 150px;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+#legendAndStats {
+    position: fixed;
+    top: 22px;
+    right: 12px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+}
+
+#graphCanvas {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controlPanel {
+        width: calc(100% - 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #legendToggle, #addResourcesButton {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    #speedRange {
+        width: 100px;
+    }
+
+    #legendAndStats {
+        width: calc(100% - 20px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #graphCanvas {
+        height: 100px;
+    }
+}
